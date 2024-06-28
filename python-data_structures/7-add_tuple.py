@@ -2,14 +2,14 @@
 def add_tuple(tuple_a=(), tuple_b=()):
     res = []
     if len(tuple_a) > len(tuple_b):
-        total = len(tuple_a)
+        more = (tuple_a)
+        less = (tuple_b)
     else:
-        total = len(tuple_b)
-    for i in range(total):
-        if i == len(tuple_b):
-            res.append(tuple_a[i])
-        elif i > len(tuple_b):
-            res.append(tuple_a[i])
+        less = (tuple_a)
+        more = (tuple_b)
+    for i in range(len(more)):
+        if i >= len(less):
+            res.append(more[i])
         else:
             res.append(tuple_a[i]+tuple_b[i])
     res = tuple(res)
