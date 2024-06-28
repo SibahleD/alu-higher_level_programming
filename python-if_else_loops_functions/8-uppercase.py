@@ -1,17 +1,15 @@
 #!/usr/bin/python3
-def uppercase(n):
+def uppercase(string):
     # findng the length of the input
-    vi = len(n)
+    leng = len(string)
     result = ""
     # loop to check each character and convert to uppercase
-    for i in range(vi):
+    for char in range(leng):
          #finding the ascii value of the character
-        x = ord(n[i])
-        if 'a' <= n[i] <= 'z':
-            #finding the new ascii value of the uppercase
-            newx = x - 32
-            #printing the new character
-            result = "{}{}".format(result, chr(newx))
+        ascii_old = ord(string[char])
+        if 97 <= ascii_old <= 122:
+            ascii_new = ascii_old - 32
+            result += chr(ascii_new)
         else:
-            result = "{}{}".format(result, chr(x))
-        print("{}".format(result), end="")
+            result += chr(ascii_old)
+    print(result)
