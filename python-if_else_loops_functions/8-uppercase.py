@@ -2,15 +2,16 @@
 def uppercase(n):
     # findng the length of the input
     vi = len(n)
+    result = ""
     # loop to check each character and convert to uppercase
-    for i in range(0, vi):
+    for i in range(vi):
          #finding the ascii value of the character
         x = ord(n[i])
         if 'a' <= n[i] <= 'z':
             #finding the new ascii value of the uppercase
             newx = x - 32
-            #printing thr new character
-            print("{}".format(chr(newx)), end="")
+            #printing the new character
+            result = "{}{}".format(result, chr(newx))
         else:
-            print("{}".format(chr(x)), end="")
-    print('')
+            result = "{}{}".format(result, chr(x))
+        print("{}".format(result), end="")
