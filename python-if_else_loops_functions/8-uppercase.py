@@ -12,4 +12,4 @@ def uppercase(string):
             result += chr(ascii_new)
         else:
             result += chr(ascii_old)
-    print(result)
+    print("{}".format(result))
