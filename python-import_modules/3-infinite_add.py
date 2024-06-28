@@ -4,7 +4,7 @@ if __name__ == "__main__":
     values = argv[1:]
     value = 0
     arg_num = len(argv) - 1
-    if arg_num == 1 :
+    if arg_num == 1:
         print("{}".format(values[0]), end="\n")
     elif arg_num > 1:
         for index in range(arg_num):
