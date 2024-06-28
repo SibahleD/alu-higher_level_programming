@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from copy import deepcopy
 
 def new_in_list(my_list, idx, element):
     total = len(my_list)
@@ -8,6 +7,6 @@ def new_in_list(my_list, idx, element):
     elif idx >= total:
         return my_list
     else:
-        new_list = deepcopy(my_list)
+        new_list = list(my_list)
         new_list[idx] = element
         return new_list
