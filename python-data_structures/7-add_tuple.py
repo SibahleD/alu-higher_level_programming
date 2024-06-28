@@ -7,7 +7,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     else:
         less = (tuple_a)
         more = (tuple_b)
-    for i in range(len(less)):
+    for i in range(2):
         if i >= len(less):
             res.append(more[i])
         else:
