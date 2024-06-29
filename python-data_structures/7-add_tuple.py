@@ -13,4 +13,4 @@ def add_tuple(tuple_a=(), tuple_b=()):
         else:
             res.append(tuple_a[i]+tuple_b[i])
     res = tuple(res)
-    return re
+    return res
