@@ -1,8 +1,11 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    roman_dig = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M":1000}
+    roman_dig = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500,
+            "M": 1000}
     int_val = 0
     fin_val = 0
+    if isinstance(roman_string, str) != True:
+        return None
     for rom_val in roman_string[::-1]:
         init_rom = roman_dig[rom_val]
 
@@ -11,5 +14,5 @@ def roman_to_int(roman_string):
             fin_val = init_rom
         else:
             int_val -= init_rom
-            
+
     return int_val
