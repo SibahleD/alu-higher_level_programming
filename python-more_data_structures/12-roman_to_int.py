@@ -6,7 +6,7 @@ def roman_to_int(roman_string):
     }
     int_val = 0
     fin_val = 0
-    if isinstance(roman_string, str) == False:
+    if isinstance(roman_string, str) is False:
         return 0
     for rom_val in roman_string[::-1]:
         init_rom = roman_dig[rom_val]
