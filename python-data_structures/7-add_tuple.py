@@ -8,8 +8,11 @@ def add_tuple(tuple_a=(), tuple_b=()):
         less = (tuple_a)
         more = (tuple_b)
     for i in range(2):
-        if i >= len(less):
-            res.append(more[i])
+        if i > (len(less) - 1):
+            if not more[i]:
+                res.append(0)
+            else:
+                res.append(more[i])
         else:
             res.append(tuple_a[i]+tuple_b[i])
     res = tuple(res)
