@@ -12,4 +12,4 @@ def roman_to_int(roman_string):
         else:
             int_val -= init_rom
             
-    return init_val
+    return int_val
