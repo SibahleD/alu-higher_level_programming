@@ -3,7 +3,7 @@ def roman_to_int(roman_string):
     roman_dig = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M":1000}
     int_val = 0
     fin_val = 0
-    for rom_val in roman_string:
+    for rom_val in roman_string[::-1]:
         init_rom = roman_dig[rom_val]
 
         if init_rom >= fin_val:
