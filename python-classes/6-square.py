@@ -9,7 +9,7 @@ class Square:
     Create new class named Square
 
     """
-    def __init__(self, size=0):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Returns a value size (Default is 0)
 
@@ -17,6 +17,7 @@ class Square:
         Raises a TypeError if size is less than 0
         """
         self.__size = size
+        self.__position = position
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
