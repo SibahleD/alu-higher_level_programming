@@ -60,16 +60,26 @@ class Square:
     def my_print(self):
         """
         """
-        print("{}".format("\n".join(["#" * self.__size] * self.__size)))
+         if self.__size == 0:
+            print()
+            return
+
+        for _ in range(self.__position[1]):
+            print()
+
+        for _ in range(self.__size):
+            print(" " * self.__position[0] + "#" * self.__size)
 
     @property
     def position(self):
-        """Getter for position attribute of the square."""
+        """
+        """
         return self.__position
 
     @position.setter
     def position(self, value):
-        """Setter for position attribute of the square."""
+        """
+        """
         if isinstance(value, tuple) and type(value) == int:
             self.__position = value
         else:
