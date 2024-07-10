@@ -7,12 +7,10 @@ Instantiating a Square class
 class Square:
     """
     Create new class named Square
-
     """
     def __init__(self, size=0, position=(0, 0)):
         """
         Returns a value size (Default is 0)
-
         Raises a ValueError if size is not an integer
         Raises a TypeError if size is less than 0
         """
