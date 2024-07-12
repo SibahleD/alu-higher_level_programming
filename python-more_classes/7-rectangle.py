@@ -62,7 +62,7 @@ class Rectangle:
     def __str__(self):
         wid = self._Rectangle__width
         hei = self._Rectangle__height
-        if self.symbol:
+        if self.print_symbol:
             symbol = "{}".format(self.print_symbol)
         else:
             symbol = "{}".format(Rectangle.print_symbol)
