@@ -61,7 +61,7 @@ class Rectangle:
         hei = self._Rectangle__height
         if wid == 0 or hei == 0:
             return ""
-        return "\n".join(["#" * self._Rectangle__width for _ in range(self._Rectangle__height)])
+        return "\n".join(["#" * wid for _ in range(hei)])
 
     def __print__(self):
         wid = self._Rectangle__width
