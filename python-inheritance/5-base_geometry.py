@@ -3,4 +3,7 @@
 Empty class BaseGeomety
 """
 class BaseGeometry:
+    """
+    Empty class
+    """
     pass
