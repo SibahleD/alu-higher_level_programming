@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-importing methods from BaseGeometry
+importing methods from Rectangle
 """
 Rectangle = __import__('8-rectangle').Rectangle
+
 
 class Square(Rectangle):
     """
