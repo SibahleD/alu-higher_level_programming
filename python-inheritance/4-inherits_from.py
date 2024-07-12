@@ -4,6 +4,6 @@ comparing instance of an object
 """
 
 
-def is_kind_of_class(obj, a_class):
+def inherits_from(obj, a_class):
     """Return true if obj is instance of a class"""
     return isinstance(obj, a_class)
