@@ -3,6 +3,7 @@
 inheriting from 'list'
 """
 class MyList:
+    """inherits from list"""
     def lookup(obj):
         """return the list"""
         return dir(obj)
