@@ -57,9 +57,9 @@ class Rectangle:
             return (wid + leng) * 2
 
     def __str__(self):
-        if self._width == 0 or self._height == 0:
+        if self._Rectangle__width == 0 or self._Rectangle__height == 0:
             return ""
-        return "\n".join(["#" * sel._width for _ in range(self._height)])
+        return "\n".join(["#" * self._Rectangle__width for _ in range(self._Rectangle__height)])
 
     def __print__(self):
-        return "Rectangle({}, {})".format(self._width, self._height)
+        return "Rectangle({}, {})".format(self._Rectangle__width, self._Rectangle__height)
