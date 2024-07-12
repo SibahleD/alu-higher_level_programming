@@ -63,10 +63,8 @@ class Rectangle:
             return ""
         return "\n".join(["#" * wid for _ in range(hei)])
 
-    def __print__(self):
+    def __repr__(self):
         wid = self._Rectangle__width
         hei = self._Rectangle__height
-        return "Rectangle({}, {})".format(wid, hei)
+        return "Rectangle{}, {})".format(wid, hei)
 
-    def __repr__(self):
-        return "Rectangle({}, {})".format(self._Rectangle__width, self._Rectangle__height)
