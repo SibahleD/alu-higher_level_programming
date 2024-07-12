@@ -9,8 +9,6 @@ class MyList(list):
         return dir(obj)
     
     def print_sorted(self):
-        """"print the list in ascending order"""
         sorted_list = sorted(self)
+        """"print the list in ascending order"""
         print(sorted_list)
-        return self
-
