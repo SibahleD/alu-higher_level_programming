@@ -66,5 +66,4 @@ class Rectangle:
     def __repr__(self):
         wid = self._Rectangle__width
         hei = self._Rectangle__height
-        return "Rectangle{}, {})".format(wid, hei)
-
+        return "Rectangle({}, {})".format(wid, hei)
