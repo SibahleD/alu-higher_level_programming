@@ -2,7 +2,7 @@
 """
 inheriting from 'list'
 """
-class MyList:
+class MyList(list):
     """inherits from list"""
     def lookup(obj):
         """return the list"""
