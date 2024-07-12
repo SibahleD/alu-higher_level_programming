@@ -62,9 +62,13 @@ class Rectangle:
     def __str__(self):
         wid = self._Rectangle__width
         hei = self._Rectangle__height
+        if self.symbol:
+            symbol = "{}".format(self.print_symbol)
+        else:
+            symbol = "{}".format(Rectangle.print_symbol)
         if wid == 0 or hei == 0:
             return ""
-        return "\n".join([Rectangle.print_symbol * wid for _ in range(hei)])
+        return "\n".join([symbol * wid for _ in range(hei)])
 
     def __repr__(self):
         wid = self._Rectangle__width
