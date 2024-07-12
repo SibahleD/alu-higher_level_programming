@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
-This module contains an empty class
+This module contains a Rectangle class
+
+Attributes:
+    width
+    height
 """
 
 
