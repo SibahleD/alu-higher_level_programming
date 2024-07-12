@@ -53,7 +53,6 @@ class Rectangle:
         wid = self._Rectangle__width
         leng = self._Rectangle__height
         if wid == 0 or leng == 0 :
-            perival = 0
+            return 0
         else:
-            perimval = (wid + leng) * 2
-        return perimval
+            return (wid + leng) * 2
