@@ -58,5 +58,5 @@ Test present: check print_sorted() returns a new list
      >>> new_list.append(5)
      >>> new_list.append(3)
      >>> new_list.append(8)
-     >>> print(id(new_list) != id(sorted_list))
+     >>> print(id(new_list) != id(new_list.print_sorted()))
      True
