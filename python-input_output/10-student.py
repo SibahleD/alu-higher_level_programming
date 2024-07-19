@@ -10,7 +10,7 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self, attrs):
+    def to_json(self, attrs=None):
         """Retrieves a dictionary represantation of an instance"""
         if isinstance(attrs, list):
             for name in attrs:
