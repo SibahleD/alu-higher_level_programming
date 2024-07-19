@@ -3,6 +3,6 @@
 def append_write(filename="", text=""):
     """Appends given text to a file with the specified filename and prints the length of the text"""
     with open(filename, 'w', encoding="utf-8") as f:
-        f.write(text)
+        f.writelines(text)
     chara = len(text)
     return chara
