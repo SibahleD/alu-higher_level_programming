@@ -9,4 +9,3 @@ def class_to_json(obj):
     Returns dictionary into simple data structure
     """
     return obj.__dict__
-
