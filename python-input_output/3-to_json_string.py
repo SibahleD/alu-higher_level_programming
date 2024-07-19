@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-import json
 """
 Viewing a file's json string representation
 """
+
+
+import json
 
 def to_json_string(my_obj):
     """Views a file's json string representation"""
