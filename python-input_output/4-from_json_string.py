@@ -2,12 +2,11 @@
 """
 Decoding a file's json string representation
 """
-
-
 import json
 
 
 def to_json_string(my_obj):
-    """Decodes a file's json string representation"""
+    """Decodes a file's json string representation
+    """
     jsonout = json.load(my_obj)
     return jsonout
