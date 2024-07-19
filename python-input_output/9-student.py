@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+Returning dictionary into a data structure
 """
 
 
