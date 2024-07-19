@@ -9,4 +9,4 @@ def from_json_string(my_obj):
     """
     Decodes a file's json string representation
     """
-    return json.load(my_obj)
+    return json.loads(my_obj)
