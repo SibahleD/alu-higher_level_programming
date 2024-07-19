@@ -10,11 +10,16 @@ class Student:
         self.last_name = last_name
         self.age = age
 
-    def to_json(self):
-        """Retrieves a dictionary represantation of an instance"""
+    def to_json(self, attrs=None):
+        """Retrieves dictionary represantation of instance"""
         if isinstance(attrs, list):
             for name in attrs:
                 if isinstance(name, str) and name in self.__dict__:
                     my_dict[name] = self.__dict__[name]
             return my_dict
         return self.__dict__
+
+    def reload_from_json(self, json):
+        """Sets replaces attributes of the instances"""
+        for key in json:
+            setattr(self, key, json[key])
