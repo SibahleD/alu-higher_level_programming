@@ -1,3 +1,4 @@
 -- Listing all rows of the table
+USE hbtn_0c_0
 SELECT *
-FROM hbtn_0c_0
+FROM first_table
