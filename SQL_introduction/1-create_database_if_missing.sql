@@ -1,2 +1,2 @@
 -- Creating a new database
-CREATE DATABASE IF NOT EXISTS htn_0c_0;
+CREATE DATABASE IF NOT EXISTS htn_0c_0
