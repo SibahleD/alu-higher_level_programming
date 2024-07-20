@@ -1,2 +1,2 @@
 -- Printing info on the first_table table
-SHOW CREATE TABLE hbtn_0c_0.first_table;
+INFO hbtn_0c_0 FOR first_table
