@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Fetches a https and displays response body
+""" Fetches a https and displays response body """
 from urllib import request
 with request.urlopen("https://alu-intranet.hbtn.io/status") as response:
     html = response.read()
