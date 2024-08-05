@@ -8,4 +8,3 @@ if __name__ == "__main__":
     with urllib.request.urlopen(argv[1]) as response:
         html_id = response.info().get('X-Request-Id')
         print(html_id)
-
