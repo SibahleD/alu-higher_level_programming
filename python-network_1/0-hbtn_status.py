@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """ Fetches a https and displays response body """
 import urllib.request
-url = "https://alu-intranet.hbtn.io/status"
-
+url = 'https://intranet.hbtn.io/status'
+if url.startswith('https://'):
+    url = 'https://alu-intranet.hbtn.io/status'
 with urllib.request.urlopen(url) as response:
     body = response.read()
-
 print("Body response:")
 print("\t- type: {}".format(type(body)))
 print("\t- content: {}".format(body))
