@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 # first class 'Base'
 """
@@ -186,4 +185,3 @@ class Base:
             turt.hideturtle()
 
         turtle.exitonclick()
-
