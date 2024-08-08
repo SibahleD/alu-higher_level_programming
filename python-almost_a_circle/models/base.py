@@ -11,9 +11,6 @@ import turtle
 class Base:
     """
         Represent the base model.
-        Represents the "base" for all other classes in project 0x0C*.
-        Attributes:
-            __nb_objects (int): number of instantiated Bases.
     """
 
     __nb_objects = 0
@@ -21,8 +18,6 @@ class Base:
     def __init__(self, id=None):
         """
             Initialize a new Base.
-            Args:
-                id (int): identity of the new Base.
         """
         if id is not None:
             self.id = id
