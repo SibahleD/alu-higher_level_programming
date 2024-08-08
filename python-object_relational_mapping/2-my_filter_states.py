@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Lists all states starting with 'N'."""
+"""Displays states matching the cli argument."""
 import MySQLdb
 import sys
 
 
 def main():
-    """Connects to the database and lists all states starting with 'N'."""
+    """Connects to the database and selects the matching states."""
     options = {
         "host": "localhost",
         "port": 3306,
@@ -14,9 +14,10 @@ def main():
         "db": sys.argv[3],
         "charset": "utf8"
     }
+    query = "SELECT * FROM states WHERE BINARY name = '{}' ORDER BY id"
     conn = MySQLdb.connect(**options)
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
+    cur.execute(query.format(sys.argv[4]))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
