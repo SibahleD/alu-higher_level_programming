@@ -29,8 +29,6 @@ class Base:
     def to_json_string(list_dictionaries):
         """
             Return: JSON serialization of a list of dicts.
-            Args:
-                list_dictionaries (list): list of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"

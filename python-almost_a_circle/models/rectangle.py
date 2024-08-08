@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# class 'Rectangle' that inherits from 'Base'
 """
     Define 'Rectangle(Base)' class.
 """
@@ -14,12 +13,6 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """
             Initialize a new Rectangle.
-            Args:
-                width (int): width of the new Rectangle.
-                height (int): height of the new Rectangle.
-                x (int): x coordinate of the new Rectangle.
-                y (int): y coordinate of the new Rectangle.
-                id (int): identity of the new Rectangle.
         """
         self.width = width
         self.height = height
