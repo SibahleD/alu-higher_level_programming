@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """ List the first State object"""
 import sys
