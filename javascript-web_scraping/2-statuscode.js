@@ -10,5 +10,5 @@ request(url, (error, response, body) => {
     return;
   }
   const statusCode = response.statusCode;
-  console.log('Code:', statusCode);
+  console.log('code:', statusCode);
 });
