@@ -1,7 +1,8 @@
 #!/usr/bin/node
 const request = require('request');
 
-const url = 'https://swapi-api.alx-tools.com/api/films/:id';
+const filmId = 1;
+const url = 'https://swapi-api.alx-tools.com/api/films/';
 
 request(url, (error, response, body) => {
   if (error) {
@@ -11,10 +12,8 @@ request(url, (error, response, body) => {
   const statusCode = response.statusCode;
   
   if (statusCode === 200) {
-    const posts = JSON.parse(body);
-    posts.forEach(post => {
-      console.log('${post.title}');
-    });
+    const film = JSON.parse(body);
+    console.log('${film.title}');
   } else {
     console.error('Request failed with status code:', statusCode);
   }
