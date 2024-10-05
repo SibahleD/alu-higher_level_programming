@@ -1,3 +1,3 @@
-$("button").click(function(){
-  alert("Button was clicked!");
+$("#red_header").click(function(){
+	$(".header").css("color", "#FF0000");
 });
